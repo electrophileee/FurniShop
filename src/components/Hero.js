@@ -13,7 +13,8 @@ const Hero = () => {
      <h2 className='mb-[30px] max-w-[627px] mx-auto lg:mb-[65px] lg:text-xl '>{subtitle}</h2>
      <button className='bg-[rgba(255,255,255,0.5)] hover:bg-[rgba(255,255,255,0.5)] px-[35px] py-[9px] mb-[160px] text-xl rounded-md backdrop-blur-md transition lg:px-[80px] lg:py-[16px] lg:mb-[194px] '>{buttonText}</button>
 
-     <div>
+{/* stats  */}
+     <div className='-top-[70px] relative'>
       <Stats />
      </div>
      </div>
