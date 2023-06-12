@@ -6,30 +6,32 @@ const Features = () => {
        <div className='container mx-auto'>
           <div className='flex flex-col lg:flex-row lg:gap-x-[100px] '>
             {/* image */}
-            <div className=''>
+            <div className='flex-1 order-1 lg:-order-1'>
               <img src={image.type} alt=' ' />
             </div>
+            <div className='flex flex-col '>
             {/* text */}
-            <div>
-              <h1>{title}</h1>
-              <p>{subtitle}</p>
+            <div className='flex-1 flex-col justify-end'>
+              <h1 className='title'>{title}</h1>
+              <p className='subtitle'>{subtitle}</p>
             </div>
 
             {/* items */}
-            <div>
+            <div >
               {items.map((item,index)=>{
                 // distructures
                 const {title,subtitle,icon}=item;
                 return (
-                  <div>
-                    <div>{icon}</div>
+                  <div className='flex mb-6 lg:last:mb-0 '>
+                    <div className='text-2xl mr-4 lg:text-3xl  '>{icon}</div>
                     <div>
-                      <h1>{title}</h1>
+                      <h4 className='text-base lg:text-xl font-semibold mb-3 '>{title}</h4>
                       <p>{subtitle}</p>
                     </div>
                     </div>
                 )
               })}
+            </div>
             </div>
           </div>
             
