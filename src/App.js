@@ -7,6 +7,9 @@ import NewItems from './components/NewItems';
 import FeaturesSecond from './components/FeaturesSecond';
 import Products from './components/Products';
 import Testimonial from  './components/Testimonial';
+import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 const App = () => {
   return <div className='w-full max-w-[1440p] mx-auto bg-white'>
@@ -16,6 +19,9 @@ const App = () => {
     <FeaturesSecond />
     <Products />
     <Testimonial />
+    <Newsletter />
+    <Footer />
+    <Header />
   </div>;
 };
 
