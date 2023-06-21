@@ -12,9 +12,9 @@ const Testimonial = () => {
 
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row lg:gap-x-10 gap-y-2'>
-        <div className='lg:max-w-[50px]'>
+        <div className='lg:max-w-[50%]'>
           {/* title */}
-          <h2 className='title ,mb-9'>{title}</h2>
+          <h2 className='title mb-9'>{title}</h2>
           {/* slider */}
           <TestimonialSlider />
         </div>

@@ -24,12 +24,15 @@ const NewItemsSlider = () => {
         }
         >
      {newInStore.products.map((product,index)=>{
-           return <SwiperSlide className='max-w-[265px]' key={index}>
+           return( 
+           <SwiperSlide className='max-w-[265px]' key={index}>
                  <div className='relative'>
                   <img  src={product.image.type}  alt=''/>
-                  <div className='absolute text-white bottom-20px w-full text-center text-[18px] lg:text-2xl font-medium capitalize '>{product.name}</div>
+                  <div className='  bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize '>{product.name}
+                  </div>
                  </div>
            </SwiperSlide>
+           );
      })}
   </Swiper>;
 };

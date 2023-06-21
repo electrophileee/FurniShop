@@ -46,8 +46,8 @@ import {
       href: 'features',
     },
     {
-      name: 'contact',
-      href: 'contact',
+      name: 'signup',
+      href: '/signup',
     },
   ];
   
@@ -340,5 +340,5 @@ import {
         href: '#',
       },
     ],
-    copyright: 'FurniShop 2022 - All Rights Reserved.',
+    copyright: 'thedecorator 2022 - All Rights Reserved.',
   };

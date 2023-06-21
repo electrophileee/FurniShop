@@ -16,7 +16,7 @@ import { testimonial } from '../Data';
 
 const TestimonialSlider = () => {
   return <Swiper className='testimonialSlider'
-  modules={{Navigation,Autoplay}}
+  modules={[Navigation,Autoplay]}
   navigation={true}
   autoplay={true}
   >
