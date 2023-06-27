@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 // imports component
 import Header from '../components/Header'
@@ -10,11 +10,24 @@ import Products from '../components/Products'
 import Testimonial from '../components/Testimonial'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
+import Cart from './cart/Cart'
+
 
 export default function Home() {
+
+  const [cartIsShown,setCartIsShown]=useState(false);
+
+  const showCartHandler=() =>{
+    setCartIsShown(true);
+  }
+  const hideCartHandler=() =>{
+    setCartIsShown(false);
+  }
+
   return (
     <div className='w-full max-w-[1440p] mx-auto bg-white' >
-        <Header />
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+        <Header onShowCart={showCartHandler} />
          <Hero />
          <Features />
          <NewItems />
@@ -23,7 +36,6 @@ export default function Home() {
          <Testimonial/>
          <Newsletter/>
          <Footer />
-
     </div>
   )
 }

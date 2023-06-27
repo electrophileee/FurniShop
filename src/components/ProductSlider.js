@@ -12,6 +12,7 @@ import {Navigation ,Pagination } from 'swiper';
 
 // import data
 import { products } from '../Data';
+
 // import icons
 import {HiPlus} from 'react-icons/hi';
 
@@ -37,7 +38,10 @@ const ProductSlider = () => {
                             <div className='w-full max-w-[290px] h-[380px] text-left ' key={index}>
                               <div className='border hover:border-accent rounded-[18px] w-full max-w-[285px] h-full max-h-[292px] flex items-center justify-center  mb-[15px] relative transition '>
                                 <img src={image.type} alt='' />
-                                <div className='absolute  bottom-5 right-[22px]   bg-gray-200 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-300 '> <HiPlus className='text-xl  text-primary ' /> </div>
+
+                                <button className='absolute  bottom-5 right-[22px]   bg-gray-200 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-300 '> <HiPlus className='text-xl  text-primary ' /> </button>
+
+                                
                               </div>
                               <div className='font-semibold lg:text-xl'>{name}</div>
                               <div className='flex items-center gap-x-3'>
